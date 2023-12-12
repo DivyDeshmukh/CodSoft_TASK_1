@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html , body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+#main {
+    height: 100vh;
+    width: 100%;
+    background: #242121;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#content {
+    height: 60%;
+    width: 60%;
+    max-width: 500px;
+    background-color: #241b1b;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    gap: 5px;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 5px 5px 500px 10px #3f3333;
+}
+
+#input-field, #tasks {
+    width: 100%;
+    /* background: red; */
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+#input-field {
+    height: 15%;
+}
+
+#input-field input {
+    width: 87%;
+    height: 100%;
+    padding: 0px 7px;
+    border-radius: 7px;
+    border: 1px solid #00000008;
+    color: #fff;
+    background-color: #000000e1;
+    font-weight: 700;
+    font-size: 100%;
+    box-shadow: 2px 2px 17px 6px #130909;
+}
+
+#input-field button {
+    height: 100%;
+    width: 13%;
+    padding: 8.25px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 100%;
+    color: rgb(164, 22, 22);
+}
+
+#tasks {
+   height: 85%;
+   /* background: red; */
+   align-items: flex-start !important;
+   overflow-y: auto;
+   transition: all ease 0.3s;
+}
+
+#tasks::-webkit-scrollbar {
+    background: rgb(221, 203, 203);
+    width: 7.5px;
+    border-radius: 10px;
+}
+
+#tasks::-webkit-scrollbar-thumb {
+    background: #e82929;
+    border-radius: 10px;
+}
+
+#tasks #list {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+#tasks .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    width: 100%;
+    height: fit-content;
+    padding: 7.5px;
+    gap: 7.5px;
+    border-radius: 10px;
+}
+
+#tasks .item input {
+    width: 10%;
+    height: 25px;
+    cursor: pointer;
+}
+
+#tasks .item span {
+    height: 100%;
+    width: 100%;
+    background-color: #e3dcdc;
+    border-radius: 3px;
+    padding: 0px 7px;
+    font-weight: 900;
+    font-size: 100%;
+    color: #a70606;
+}
+
+#tasks .item button {
+    padding: 0px 7px;
+    border-radius: 7px;
+    border: 1.6px solid rgb(63, 83, 200);
+    background-color: #fff;
+    color: rgb(39, 55, 133);
+    font-weight: 700;
+    font-size: 90%;
+    cursor: pointer;
+    height: 25px;
+}
